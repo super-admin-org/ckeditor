@@ -1,0 +1,42 @@
+{
+    "name": "super-admin-ext/ckeditor",
+    "description": "Integrate CKEDITOR into super-admin",
+    "type": "library",
+    "keywords": [
+        "super-admin",
+        "wysiwyg",
+        "extension",
+        "editor",
+        "CKEditor"
+    ],
+    "homepage": "https://github.com/super-admin-ext/ckeditor",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "super-admin",
+            "email": "info@super-admin.org"
+        }
+    ],
+    "require": {
+        "php": ">=7.0.0",
+        "laravel/framework": ">=7.0",
+        "super-admin-org/super-admin": "~1.0",
+        "ckeditor/ckeditor": "4.21"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~6.0",
+        "laravel/laravel": "~7.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "SuperAdmin\\Admin\\CKEditor\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "SuperAdmin\\Admin\\CKEditor\\CKEditorServiceProvider"
+            ]
+        }
+    }
+}
