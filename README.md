@@ -10,7 +10,7 @@ This is a `super-admin` extension that integrates `CKEDITOR` into the `super-adm
 ## Installation
 
 ```bash
-composer require super-admin-ext/ckeditor
+composer require super-admin-org/ckeditor
 ```
 
 Then

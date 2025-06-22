@@ -1,5 +1,5 @@
 {
-    "name": "super-admin-ext/ckeditor",
+    "name": "super-admin-org/ckeditor",
     "description": "Integrate CKEDITOR into super-admin",
     "type": "library",
     "keywords": [
@@ -9,7 +9,7 @@
         "editor",
         "CKEditor"
     ],
-    "homepage": "https://github.com/super-admin-ext/ckeditor",
+    "homepage": "https://github.com/super-admin-org/ckeditor",
     "license": "MIT",
     "authors": [
         {
