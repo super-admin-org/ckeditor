@@ -20,7 +20,7 @@
     "require": {
         "php": ">=7.0.0",
         "laravel/framework": ">=7.0",
-        "super-admin-org/super-admin": "~1.0",
+        "super-admin-org/super-admin": "dev-main",
         "ckeditor/ckeditor": "4.21"
     },
     "require-dev": {
