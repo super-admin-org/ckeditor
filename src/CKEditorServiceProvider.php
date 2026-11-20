@@ -29,7 +29,7 @@ class CKEditorServiceProvider extends ServiceProvider
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
             $this->publishes(
                 [$assets => public_path('vendor/super-admin-org/ckeditor')],
-                'super-admin-ckeditor'
+                ['super-admin-ckeditor', 'laravel-assets']
             );
         }
 
