@@ -18,7 +18,12 @@ class CKEditorServiceProvider extends ServiceProvider
         }
 
         if ($views = $extension->views()) {
-            $this->loadViewsFrom($views, 'super-admin-ckeditor');
+            // Template-aware: <views>/<template>/ and <template>/extensions/super-admin-ckeditor/ override <views>/.
+            if (class_exists(\SuperAdmin\Admin\Template\TemplateManager::class)) {
+                \SuperAdmin\Admin\Facades\Admin::template()->extensionViews('super-admin-ckeditor', $views);
+            } else {
+                $this->loadViewsFrom($views, 'super-admin-ckeditor');
+            }
         }
 
         if ($this->app->runningInConsole() && $assets = $extension->assets()) {
