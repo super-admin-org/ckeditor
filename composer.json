@@ -9,7 +9,12 @@
         "editor",
         "CKEditor"
     ],
-    "homepage": "https://github.com/super-admin-org/ckeditor",
+    "homepage": "https://super-admin.org/laravel/extension-ckeditor/",
+    "support": {
+        "docs": "https://super-admin.org/laravel/extension-ckeditor/",
+        "issues": "https://github.com/super-admin-org/ckeditor/issues",
+        "source": "https://github.com/super-admin-org/ckeditor"
+    },
     "license": "MIT",
     "authors": [
         {
@@ -20,7 +25,7 @@
     "require": {
         "php": ">=7.0.0",
         "laravel/framework": ">=7.0",
-        "super-admin-org/super-admin": "^1.0",
+        "super-admin-org/super-admin": "^1.0|^2.0",
         "ckeditor/ckeditor": "^4.25"
     },
     "require-dev": {
